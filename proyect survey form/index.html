@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" /> <!--SEO stuff-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--responsive multidevice stuff-->
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">   <!-- separate style.css on different file (common practice)-->
+  </head>
+  <body>
+    <header>
+        <h1 id="title">Survey form</h1>
+        <p id="description">
+            Let us know how degenerate you are
+        </p>
+    </header>
+    <form action="" id="survey-form">
+        <label id="name-label" for="name">Name</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            placeholder="Your name"
+            required
+          />
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Your email"
+            required
+          />
+          <label id="number-label" for="number">Age</label>
+          <input
+            type="number"
+            name="age"
+            id="number"
+            placeholder="Your age"
+            required
+            min="18"
+            max="120"
+          />
+        <button type="submit" id="submit" class="submit-button">
+        Submit
+        </button>
+    </form>
+    
+
+  </body>
+</html>
