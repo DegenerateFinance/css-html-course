@@ -1,0 +1,208 @@
+** start of undefined **
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" /> <!--SEO stuff-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" /> <!--responsive multidevice stuff-->
+        <title>Survey Form</title>
+        <link rel="stylesheet" href="styles.css">   <!-- separate style.css on different file (common practice)-->
+    </head>
+    <body>
+        
+            <header>
+                <div class="menu">
+                    <h1 id="title">Survey form</h1>
+                    <p id="description" class="description">Let us know how degenerate you are</p>
+                </div>
+            </header>
+            <main>
+                <div class="survey-box">
+                    <form action="" id="survey-form">
+                      <label id="name-label" for="name">Name</label>
+                        <input
+                          type="text"
+                          name="name"
+                          id="name"
+                          class="inline"
+                          placeholder="Your name"
+                          required
+                        />
+                        <label id="email-label" for="email">Email</label>
+                        <input
+                          type="email"
+                          name="email"
+                          id="email"
+                          class="inline"
+                          placeholder="Your email"
+                          required
+                        />
+                        <label id="number-label" for="number">Age</label>
+                        <input
+                          type="number"
+                          name="age"
+                          id="number"
+                          class="inline"
+                          placeholder="Your age"
+                          required
+                          min="18"
+                          max="120"
+                        />
+                        <label for="">Choose your degeneracy level:</label>
+                        <select id="dropdown" name="degen-level" required>
+                          <option disabled selected value>Select your prefered leverage</option>
+                          <option value="no-leverage">No leverage</option>
+                          <option value="mild">Mild degen: x10</option>
+                          <option value="degen">Degen: x100</option>
+                          <option value="master">Master degen: x500</option>
+                          <option value="full">Full degen: x1000</option>
+                        </select>
+                        
+                        <p class="">Your degen journey</p>
+                        <label for="">
+                          <input type="radio"
+                          name="radio-button"
+                          value="begginer"
+                          >
+                          Begginer degen
+                        </label>
+                        <label for="">
+                          <input type="radio"
+                          name="radio-button"
+                          value="intermediate"
+                          >
+                          Intermediate degen
+                        </label>
+                        <label for="">
+                          <input type="radio"
+                          name="radio-button"
+                          value="advanced"
+                          >
+                          Advanced degen
+                        </label>
+
+                        <p>What constitutes a degen?
+                          <span>(in your opinion)</span>
+                        </p>
+                        <label for="">
+                          <input type="checkbox"
+                          value="risk-control"
+                          >
+                          Risk Control
+                        </label>
+                        <label for="">
+                          <input type="checkbox"
+                          value="leverage"
+                          >
+                          Leverage
+                        </label>
+                        <label for="">
+                          <input type="checkbox"
+                          value="braideadness"
+                          >
+                          Braideadness
+                        </label>
+                        <label for="">
+                          <input type="checkbox"
+                          value="raging"
+                          >
+                          Raging
+                        </label>
+                        <label for="">
+                          <input type="checkbox"
+                          value="trashtalk"
+                          >
+                          Trashtalk
+                        </label>
+                        <p>Describe your monst degenerate experience</p>
+                        <textarea name="" id="" cols="35" rows="15" placeholder="story time">
+
+                        </textarea>
+                        <button type="submit" id="submit" class="submit">
+                        Submit
+                        </button>
+                    </form>
+
+                </div>
+
+            </main>
+        
+        
+    </body>
+</html>
+
+** end of undefined **
+
+** start of undefined **
+
+body{
+
+}
+
+body::before{
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;    /*this puts the background bellow ? */
+    background-image: linear-gradient(
+      115deg,
+      rgba(228, 231, 22, 0.8),
+      rgba(209, 145, 7, 0.7)
+    ),
+    url(https://imgs.search.brave.com/lvSKvRxp8LuR73jEu50JQDRnlNZoFiIFKoj5IPZ_MTM/rs:fit:844:225:1/g:ce/aHR0cHM6Ly90c2Uz/Lm1tLmJpbmcubmV0/L3RoP2lkPU9JUC5P/SHlWZklHZHFwcGJl/dWVSVng4YjZBSGFF/SyZwaWQ9QXBp);
+    
+    opacity: 30%;
+}
+h1{
+    text-align: center;
+}
+.description{
+    text-align: center;
+}
+label, p , option, select{
+	display: block;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.125rem;
+    margin-bottom: 15px;
+}
+form{
+    margin: 25px 25px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+
+textarea{
+    margin: 10px 0 0 0;
+    width: 100%;
+    min-height: 2em;
+}
+.menu{
+    width: 69%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.survey-box{
+    width: 69%;
+    background-color: rgb(179, 176, 5); /* just for visual pouposes*/
+    margin: 20px auto;
+}
+.inline{
+    display: block;
+    margin-bottom: 15px;
+    font-size: inherit;
+}
+
+
+.submit{
+    display: block;
+    font-size: inherit;
+    padding: 10px;
+    margin: 25px auto;
+    background-color: yellow;
+}
+
+** end of undefined **
+
