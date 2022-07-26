@@ -1,0 +1,14 @@
+body{
+    /*background-color: #010001;   change bg color at the end (for visual purposes)     */
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+}
+.header{
+    color: aqua;    /* change to some white or bruh like color */
+    
+}
+img{
+    max-width: 100%;
+    margin: 25px auto;
+}
