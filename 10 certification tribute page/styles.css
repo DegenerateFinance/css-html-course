@@ -2,13 +2,40 @@ body{
     /*background-color: #010001;   change bg color at the end (for visual purposes)     */
     text-align: center;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-
+    margin: 0 0;
+    background-color: #000000;
+}
+main{
 }
 .header{
-    color: aqua;    /* change to some white or bruh like color */
-    
+    color: rgb(204, 228, 228);    /* change to some white or bruh like color */
+}
+#img-div{
+    margin-bottom: 30px;
+    color: rgb(204, 228, 228);    /*img-caption color */
 }
 img{
     max-width: 100%;
-    margin: 25px auto;
+    margin: 0px auto 40px auto;
+    display: block;
+}
+section{
+    background-color: rgb(92, 92, 92);
+    padding: 20px 0;
+    margin-bottom: 30px;
+}
+#tribute-info h2{
+    color: rgb(179, 177, 192);
+}
+.sec{
+    color: rgb(179, 177, 192);
+    margin: 0 auto;
+    text-align: left;
+    max-width: 80%;
+}
+a:visited{
+    color: rgb(179, 177, 192) ;
+}
+a:hover{
+    color: rgb(30, 167, 53);
 }
