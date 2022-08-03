@@ -1,14 +1,51 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    border: solid gray 1px;
+}
 header{
     color: rgb(10, 33, 138);
     margin-top: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: large;
 }
 nav{
     position: fixed;
+    margin: 0;
+    width: 150px;
+    height: 100%;
+    background-color: beige;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-right: solid gray;
+}
+#navbar li{
+    padding: 10px 10px 10px 20px;
+    list-style: none;
+    border-bottom: solid gray;
+}
+#navbar header{
+    padding-left: 20px;
+    padding-bottom: 20px;
+    border-bottom: solid gray;
+}
+#navbar a{
+    text-decoration: none;
 }
 main{
-
+    margin-left: 150px;
+    padding-left: 25px;
+}
+#main-doc p, li, code{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 11px;
 }
 
-@media (max-width:600px) {
-    
+@media (max-width:480px) {
+    nav{
+        width: 100px;
+    }
+    main{
+        margin-left: 100px;
+    }
 }
