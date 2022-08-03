@@ -1,0 +1,14 @@
+header{
+    color: rgb(10, 33, 138);
+    margin-top: 20px;
+}
+nav{
+    position: fixed;
+}
+main{
+
+}
+
+@media (max-width:600px) {
+    
+}
