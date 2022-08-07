@@ -1,0 +1,12 @@
+header{
+    position: fixed;
+    background-color: antiquewhite;
+    margin: 0 auto;
+    
+}
+#nav-bar{
+    font-size: large;
+}
+p{
+    font-size: 100px;
+}
