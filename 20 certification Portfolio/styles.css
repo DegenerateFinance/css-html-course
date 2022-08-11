@@ -1,0 +1,36 @@
+:root{
+    --blue1: #0A2463;
+    --blue2: #3E92CC;
+    --white1: #FFFAFF;
+    --pink1: #D8315B;
+    --black: #1E1B18;
+    font-size: 100%;
+}
+body{
+    background-image: linear-gradient( 45deg,var(--blue2), var(--black));
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Times New Roman', Times, serif;
+}
+main{
+    
+}
+header{
+    background-color: var(--black);
+}
+nav{
+    display: inline-flex;
+    align-content: right;
+    margin-left: 55%;
+}
+nav li{
+    list-style: none;
+    padding: 1.5rem 1.5rem;
+}
+nav a{
+    text-decoration: none;
+    color: #D8315B;
+    font-size: 1.7rem;
+    text-align: center;
+    font-weight: bold;
+}
