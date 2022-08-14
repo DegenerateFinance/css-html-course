@@ -8,7 +8,12 @@
     --gradientBlueBlack: linear-gradient( 45deg,var(--blue2), var(--black));
     --gradientWhiteBlue: linear-gradient(45deg,var(--white1),var(--blue2));
     --gradient1: linear-gradient(45deg,var(--pink1),var(--white1),var(--blue2));
+    --gradient2: linear-gradient(225deg,var(--pink1),var(--white1),var(--blue2));
     font-size: 100%;
+    --grey: #BFC0C0;
+    --orange: #EF8354;
+    --gradientOrangeGrey: linear-gradient(45deg,var(--orange),var(--grey));
+    --gradientGreyBlack: linear-gradient(45deg,var(--black),var(--grey));
 }
 @media (max-width: 75em) {
 html {
@@ -27,6 +32,7 @@ header{
     position: fixed;
     top: 0;
     width: 100%;
+    z-index: 5;
 }
 nav ul{
     display: flex;
@@ -54,43 +60,40 @@ main{
     height: 45rem;
     background-image: var(--gradient1);
     color: var(--blue1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
     background-position: top right;
     background-size: 300%;
     animation: welcome-background 10s infinite alternate;
 }
 @keyframes welcome-background { /*lil animation to change the background in this section*/
-
     100%{
         background-position: bottom left;
     }
-}
-#welcome-section{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
 }
 #presentation{
     width: auto;
     margin: auto;
     color: var(--black);
-    animation: rescale 0.3s forwards;
+    animation: rescale-welcome 0.3s forwards;
 }
 #presentation:hover{
-    animation: scale150smooth 0.3s forwards;
+    animation: scale150-welcome 0.3s forwards;
 }
-@keyframes scale150smooth {
+@keyframes scale150-welcome {
     100%{
         transform: scale(1.5);
-        background: var(--rainbow);
+        background: var(--gradientBlueBlack);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
 }
-@keyframes rescale {
+@keyframes rescale-welcome {
     0%{
         transform: scale(1.5);
-        background: var(--rainbow);
+        background: var(--gradientBlueBlack);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
     }
@@ -105,12 +108,77 @@ main{
 #presentation h2{
     font-size: 1rem;
 }
-/*
-@keyframes size-hover{
+#skills{
+    background-image: var(--gradientGreyBlack);
+    color: var(--pink1);
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0 1.7rem 0;    
+}
+#skills h6{
+    font-size: 2.7rem;
+    padding-bottom: 0;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+#skill-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.skill-item{
+    background-color: var(--blue1);
+    margin: 1.2rem 1.8rem 2rem 1.8rem;
+    padding: auto;
+    width: 11rem;
+    animation: rescale-skill 0.5s forwards;
+}
+.skill-item:hover{
+    animation: scale-skill 0.5s forwards;
+}
+@keyframes scale-skill {
     100%{
-        font-size: 150%;
+        transform: scale(1.15);
     }
-}*/
+}
+@keyframes rescale-skill {
+    0%{
+        transform: scale(1.15);
+    }
+    100%{
+        transform: scale(1);
+    }
+}
+.skill-item img{
+    padding-top: 2rem;
+    object-fit: fill;
+    width: 6rem;
+    height: 6rem;
+}
+#projects{
+    background-image: var(--gradientGreyBlack);
+    color: var(--pink1);
+    text-align: center;
+    margin: 0;
+    padding: 1rem 0 1.7rem 0;    
+}
+#project-grid{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.project-item{
+    background-color: var(--blue1);
+    margin: 1.2rem 1.8rem 2rem 1.8rem;
+    padding: auto;
+    width: 11rem;
+    animation: rescale-skill 0.5s forwards;
+}
+.project-item:hover{
+    animation: scale-skill 0.5s forwards;
+}
 /*temp*/
 p{
     font-size: 5rem;
