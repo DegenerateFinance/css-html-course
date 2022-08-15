@@ -7,6 +7,7 @@
     --rainbow: linear-gradient(45deg, red, orange, yellow, green, blue, indigo, violet, red);
     --gradientBlueBlack: linear-gradient( 45deg,var(--blue2), var(--black));
     --gradientWhiteBlue: linear-gradient(45deg,var(--white1),var(--blue2));
+    --gradientPinkGrey: linear-gradient(225deg,var(--pink1),var(--grey));
     --gradient1: linear-gradient(45deg,var(--pink1),var(--white1),var(--blue2));
     --gradient2: linear-gradient(225deg,var(--pink1),var(--white1),var(--blue2));
     font-size: 100%;
@@ -115,7 +116,7 @@ main{
     margin: 0;
     padding: 1rem 0 1.7rem 0;    
 }
-#skills h6{
+h6{ /*both skills and projects use this as header*/
     font-size: 2.7rem;
     padding-bottom: 0;
     margin-top: 2rem;
@@ -128,7 +129,7 @@ main{
     flex-wrap: wrap;
 }
 .skill-item{
-    background-color: var(--blue1);
+    background-color: grey;
     margin: 1.2rem 1.8rem 2rem 1.8rem;
     padding: auto;
     width: 11rem;
@@ -140,11 +141,13 @@ main{
 @keyframes scale-skill {
     100%{
         transform: scale(1.15);
+        background-color: var(--grey);
     }
 }
 @keyframes rescale-skill {
     0%{
         transform: scale(1.15);
+        background-color: var(--grey);
     }
     100%{
         transform: scale(1);
@@ -163,6 +166,13 @@ main{
     margin: 0;
     padding: 1rem 0 1.7rem 0;    
 }
+a{
+    text-decoration: none;
+}
+.project-title{
+    color: var(--pink1);
+    padding: 2.2rem 0 0 0;
+}
 #project-grid{
     display: flex;
     flex-direction: row;
@@ -170,16 +180,43 @@ main{
     flex-wrap: wrap;
 }
 .project-item{
-    background-color: var(--blue1);
+    background-color: var(--black);
     margin: 1.2rem 1.8rem 2rem 1.8rem;
     padding: auto;
-    width: 11rem;
+    width: 22rem;
     animation: rescale-skill 0.5s forwards;
 }
 .project-item:hover{
     animation: scale-skill 0.5s forwards;
 }
-/*temp*/
-p{
-    font-size: 5rem;
+.project-item img{
+    padding: 1.5rem 0 3rem 0;
+    object-fit: fill;
+    width: 18rem;
+    height: 18rem;
+}
+#contact{
+    background-image: var(--gradientPinkGrey);
+    padding: 15rem;
+    text-align: center;
+}
+#contact h1{
+    color: var(--black);
+    font-size: 3rem;
+}
+#contact p{
+    color: var(--black);
+}
+#contact-links{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: auto;
+    padding: 0;
+}
+.contact-button{
+    font-size: 1.5rem;
+    padding: 1.2rem;
+    color: var(--black);
 }
